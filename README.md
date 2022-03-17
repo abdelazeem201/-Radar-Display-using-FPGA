@@ -1,0 +1,2 @@
+# -Radar-Display-using-FPGA
+Radar plan position indicator (PPI) is used to display the range and Azimuth of a target as a dot inside range circles, a scanning line usually represents the direction of the Radar antenna. In order to implement a Radar PPI on FPGA a VGA controller must be designed in VHDL, this VGA controller must provide the correct timing and data to display the range circles, the scanning line and the target.
