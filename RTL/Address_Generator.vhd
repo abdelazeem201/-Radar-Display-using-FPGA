@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_unsigned.ALL;
 
 entity addr is
-    Port ( rst,clk : in  STD_LOGIC; 
+    Port ( reset,clk : in  STD_LOGIC; 
            y_axis : out  STD_LOGIC;  
            dout : out  STD_LOGIC_VECTOR (8 downto 0));
 end addr;
@@ -14,9 +14,9 @@ signal flag: std_logic:='0';
 signal const:integer:=0;
 signal up,down:std_logic:='0';
 begin
-process(clk,rst)
+process(clk,reset)
 begin
-if rst='1' then
+if reset='1' then
     reg<="100001101";
 elsif rising_edge(clk) then
         if reg=0 then
