@@ -3,7 +3,7 @@ module clock_divider(
     output reg clk_out
     );
     
-    reg [7:0] Nexys4_CLK_FREQ = 450;
+    reg [7:0] Nexys4_CLK_FREQ = 100;
     reg [7:0] VGA_FREQ = 25;
     reg [7:0] scale_factor;
     reg [7:0] count;
